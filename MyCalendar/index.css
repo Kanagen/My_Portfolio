@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 30vw;
+    min-height: 30vw;
+    border: 3px solid white;
+    padding: 0 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 8px 10px gray;
+    background-color: black;
+}
+.header {
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bold;
+    padding-left: 2vw;
+    /* text-decoration: underline; */
+    color: aqua;
+    user-select: none;
+}
+#btn{
+    width: 5vw;
+    height: fit-content;
+    font-size: 1vw;
+    margin-right: 2vw;
+    padding: 0.3vw;
+    color: white;
+    border-radius: 0.5vw;
+    margin-left: 2vw;
+}
+#btn:hover{
+    cursor: pointer;
+}
+
+.dataSet, .controls, .inputData {
+    width: 100%;
+    height: 4vw;
+    font-size: 1.3vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1vw;
+    cursor: pointer;
+    user-select: none;
+    /* background-color: gray; */
+}
+
+.dataSet span{
+    color: white;
+    font-size: 2vw;
+}
+.dataMonth, .dataYear {
+    height: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.5vw;
+    user-select: none;
+    background-color: blanchedalmond;
+}
+.dataMonth,.monthList {
+    width: 40%;
+}
+.dataYear,.setYear {
+    width: 20%;
+}
+.monthList, .setYear{
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: bold;
+    border-radius: 0.5vw;
+    background-color: blanchedalmond;
+}
+.days {
+    width: 100%;
+    min-height: 100%;
+    color: white;
+    
+    /* margin-top: 15%; */
+    /* border: 1px solid red; */
+}
+.weekDays, .dayMeans {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    list-style: none;
+    /* border: 3px solid black; */
+}
+.weekDays li, .dayMeans li {
+    width: calc(100%/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid greenyellow; */
+    font-weight: bold;
+    font-size: 2vw;
+}
+.weekDays li{
+    text-decoration: underline;
+}
+.weekDays :nth-child(6), .weekDays :nth-child(7), .holiday {
+    color: red;
+}
+/* .dayMeans li:nth-child(7n), .dayMeans li:nth-child(6), .dayMeans li:nth-child(7n+6) {
+    color: red;
+} */
+.dayMeans{
+    height: 85%;
+    flex-wrap: wrap;
+    margin-top: 1vw;
+}
+.active {
+    color: aqua;
+    font-weight: bold;
+    border: 2px solid blueviolet;
+}
+.activeholiday{
+    color: red;
+    border: 2px solid blueviolet;
+}
+.activeRed {
+    color: red;
+}
+.inactive {
+    color: rgb(128, 128, 128);
+    font-weight: normal;
+}
+.inactiveRed {
+    color: rgb(246, 187, 179);
+}
+.dayMeans li:hover {
+    background-color: blueviolet;
+    color: white;
+}
+.navEditor {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1vw;
+}
+.noVisible {
+    display: none;
+}
+.ready{
+    font-size: 1vw;
+    font-weight: normal;
+    color: white;
+}

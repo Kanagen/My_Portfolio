@@ -1,0 +1,42 @@
+/*Меню выбора способа игры*/
+
+/* #wripper:not(.active) {
+    display: none;
+} */
+#wripper_asck-menu:not(.active) {
+    display: none;
+}
+/* #wripper{
+    width: 100vw;
+    height: 100vh;
+} */
+#wripper_asck-menu {
+    width: 60%;
+    height: 30%;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.asck-menu_btn-conteiner {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.asck-menu-btn_item {
+    width: 25%;
+    height: 100%;
+    list-style-type: none;
+    list-style-position: inside;
+}
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color:rgb(90,17,17);
+    text-align: center;
+}

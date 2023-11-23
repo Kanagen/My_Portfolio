@@ -1,0 +1,33 @@
+/* Social sideBar */
+
+.social_sb{
+    width: 3vw;
+    height: 12vw;
+    /* border: 1px solid black; */
+    position: relative;
+    top: 15vw;
+    background-color: #f26c4f;
+}
+.social_sb-list{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+.social_sb-item{
+    width: 100%;
+    height: calc(100%/4);
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social_sb-item a, .img_social-item a{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #BB341B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

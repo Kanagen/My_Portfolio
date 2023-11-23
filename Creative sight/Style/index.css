@@ -1,0 +1,19 @@
+@import url(./header.css);
+@import url(./Social_side_bar.css);
+@import url(./main_content.css);
+@import url(./sprite.css);
+@import url(./footer.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    /* background-image: url(./img/Pattern.png); */
+    background-image: url(../img/Pattern.png);
+    background-repeat: repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}

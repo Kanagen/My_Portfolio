@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZSIN</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body class="main">
+    <div id="wripper" >
+        <div id="hexogram_container"> </div>
+
+    <div id="control_container">
+        <button id="result" class="non_visible visible">Толкование</button>
+
+        <div class="line_btns">
+            <button id="solidLine"><span></span></button>
+            <button id="dashedLine">
+                <span class="line"></span>
+                <span class="space"></span>
+                <span class="line"></span>
+            </button>
+        </div>
+
+        <button id="deleteLast">Отменить</button>
+    </div>
+    <div id="interpretCase">
+        <div id="hexNumber"></div>
+        <div id="hexName"></div>
+        <div id="hexText"></div>
+    </div>
+    <button id="reset">Сбросить</button>
+    </div>
+
+    <!--Меню выбора-->
+    <div id="wripper_asck-menu" >
+
+        <h2>Кто бросает монеты?</h2>
+        <ul id="chBtn" class="asck-menu_btn-conteiner">
+            <li id="win" class="asck-menu-btn_item">
+                <a id="asck-win" class="btn-link" href="#">Компьютер</a>
+            </li>
+            <li id="coins" class="asck-menu-btn_item">
+                <a id="asck-coins" class="btn-link" href="#">Я сам</a>
+            </li>
+        </ul>
+        
+    </div>
+    <button class="btn"><a href="../index.html"><i class="fa-sharp fa-regular fa-circle-xmark"></i></a></button>
+
+    <script src="../js/textsBD.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="https://kit.fontawesome.com/2c02e2d4e6.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

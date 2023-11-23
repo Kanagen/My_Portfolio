@@ -1,0 +1,32 @@
+/* Sprite */
+
+.sprite{
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* background-image: url(./img/Sprigt.png); */
+    background-image: url(../img/Sprigt.png);
+    object-fit: cover;
+}
+.sprite.ball{
+    /* margin-left: 0.3vw; */
+    background-position: 2px 0;
+}
+.sprite.twitter{
+    background-position: -30px 0;
+}
+.sprite.rss{
+    background-position: -69px 0;
+}
+.sprite.facebook{
+    background-position: -103px 0;
+}
+.sprite.fFacebook{
+    background-position: -225px 0px;
+}
+.sprite.fTwitter{
+    background-position: -148px 0px;
+}
+.sprite.fRss{
+    background-position: -293px 0px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- контейнер для календаря -->
+
+    <div class="container">
+
+<!-- заголовок и кнопка "Сегодня" -->
+
+        <div class="header">
+            <span>КАЛЕНДАРЬ</span>
+            
+            <span id="btn">Сегодня</span>
+
+<!-- конец заголовка -->
+        </div>
+
+<!-- Поля месяца и года для управления стрелками -->
+
+        <div class="dataSet">
+            <div class="controls">
+                <span id="prev">&laquo;</span>
+                <div class="dataMonth"></div>
+                <div class="dataYear" title="dblClick"></div>
+                <span id="next">&raquo;</span>
+            </div>
+
+<!-- Поля месяца и года для прямого ввода -->
+
+            <div class="inputData noVisible">
+                <select name="monthes" class="monthList"></select>
+                <input type="text" class="setYear">
+                <p class="ready">Готово</p>
+            </div>
+
+<!-- конец блока навигации -->
+        </div>
+
+<!-- блок чисел и дней календаря -->
+
+        <div class="navEditor"></div>
+<!-- дни календаря -->
+         
+        <div class="days">
+            <ul class="weekDays">
+                <li>Пн</li>
+                <li>Вт</li>
+                <li>Ср</li>
+                <li>Чт</li>
+                <li>Пт</li>
+                <li>Сб</li>
+                <li>Вс</li>
+            </ul>
+
+<!-- числа заполняемые динамически -->
+
+            <ul class="dayMeans"></ul>
+            <!-- конец navEditor -->
+        </div>
+    <!-- конец контейнера     -->
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
