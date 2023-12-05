@@ -142,7 +142,7 @@ body{
     /* border: 1px solid red; */
 }
 .sample-list{
-    width: 87%;
+    width: 100%;
     height: max-content;
     display: flex; 
     justify-content: space-between;
@@ -150,8 +150,8 @@ body{
     list-style: none;
 }
 .sample-list-item{
-    width: 40vw;
-    height: 35vw;
+    width: 45vw;
+    height: 50vw;
     background-color: beige;
     border: 1px solid rgb(216, 183, 143);
     margin-bottom: 2vw;
@@ -175,7 +175,7 @@ body{
 } */
 .item-pict-frame{
     width: 90%;
-    height: 90%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,7 +197,7 @@ body{
 }
 .item-txt-desc{
     width: 90%;
-    height: 3vw;
+    height: 5vw;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -213,7 +213,7 @@ body{
     left: 0;
     overflow: hidden;
     font-size: 1.3vw;
-    padding: 0.5vw 1vw 0;
+    padding: 2vw;
     text-align: justify;
     margin-top: 1vw;
     transition: all 1s ease-in-out;
@@ -227,7 +227,7 @@ body{
     /* border: 1px solid blue; */
 }
 .item-txt:hover{
-    height: calc(35vw/2);
+    height: calc(50vw/2);
 }
 .btn {
     width: 7vw;
