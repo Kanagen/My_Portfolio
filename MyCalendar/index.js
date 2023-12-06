@@ -193,7 +193,7 @@ function checkUp() {
 }
 
 // навигация по календарю с помощью прямого ввода месяца и года
-currYear.addEventListener('dblclick', function func() {
+currYear.addEventListener('click', function func() {
 
     //присвоение классов
 
@@ -227,7 +227,7 @@ currYear.addEventListener('dblclick', function func() {
     })
     
     // this.classList.add('noVisible');
-    this.removeEventListener('click', func);
+    // this.removeEventListener('click', func);
     
 })
 
