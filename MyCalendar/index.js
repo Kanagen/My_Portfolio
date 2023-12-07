@@ -41,6 +41,8 @@ const calendarDays = document.querySelector(".dayMeans");
 
 const arrows = document.querySelectorAll(".dataSet span");
 
+const ready = document.querySelector(".ready");
+
 btn.classList.add('noVisible');
 
 //заполнение календаря числами
@@ -214,23 +216,32 @@ currYear.addEventListener('click', function func() {
         monthList.appendChild(item);
     }
 
-    setYear.addEventListener('blur', function () {
+    // setYear.addEventListener('blur', function () {
+    //     year = Number(setYear.value);
+
+    //     checkUp();
+    //     CalendarMain();
+    // })
+
+    // monthList.addEventListener('click', function () {
+
+    //     month = monthList.options.selectedIndex;
+    //     checkUp();
+    //     CalendarMain();
+
+    // })
+    
+    // this.classList.add('noVisible');
+    // this.removeEventListener('click', func);
+
+    ready.addEventListener('click', ()=>{
+        month = monthList.options.selectedIndex;
         year = Number(setYear.value);
 
         checkUp();
         CalendarMain();
-    })
-
-    monthList.addEventListener('click', function () {
-
-        month = monthList.options.selectedIndex;
-        checkUp();
-        CalendarMain();
 
     })
-    
-    // this.classList.add('noVisible');
-    // this.removeEventListener('click', func);
     
 })
 
