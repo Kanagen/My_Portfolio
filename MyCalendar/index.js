@@ -193,7 +193,21 @@ function checkUp() {
 }
 
 // навигация по календарю с помощью прямого ввода месяца и года
+<<<<<<< HEAD
 currYear.addEventListener('click', function func() {
+=======
+<<<<<<< HEAD
+currYear.addEventListener('click', function func(e) {
+    e.preventDefault();
+
+    if(e.target.tagName = 'P'){
+
+        
+    
+=======
+currYear.addEventListener('click', function func() {
+>>>>>>> 318ba800060b0412960dc62f68feceb86589adbc
+>>>>>>> 7b3501888d343856242c13ae1ee7c9dfafbf274f
 
     //присвоение классов
 
@@ -227,6 +241,13 @@ currYear.addEventListener('click', function func() {
     
     // this.classList.add('noVisible');
     // this.removeEventListener('click', func);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+}
+=======
+>>>>>>> 318ba800060b0412960dc62f68feceb86589adbc
+>>>>>>> 7b3501888d343856242c13ae1ee7c9dfafbf274f
     
 })
 

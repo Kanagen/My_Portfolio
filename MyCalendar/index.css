@@ -170,7 +170,11 @@ body {
 }
 @media screen and (max-width: 920px) {
     body{
+<<<<<<< HEAD
         align-items: flex-start;
+=======
+        align-items:baseline;
+>>>>>>> 7b3501888d343856242c13ae1ee7c9dfafbf274f
         padding-top: 40%;
     }
     .container{

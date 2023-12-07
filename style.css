@@ -185,6 +185,7 @@ body{
 .item-txt p:first-of-type{
     margin-top: 0.5vw;
     text-align: center;
+    margin-top: 0.5vw;
 }
 .item-txt-desc{
     width: 90%;
