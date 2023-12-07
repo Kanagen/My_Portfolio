@@ -203,6 +203,9 @@ currYear.addEventListener('click', function func() {
 
     btn.classList.remove('noVisible');
 
+    setYear.value = '';
+
+
     //заполнение выпадающего списка
     for (let i = 0; i < months.length; i++) {
         let item = document.createElement('option');
@@ -211,7 +214,7 @@ currYear.addEventListener('click', function func() {
         monthList.appendChild(item);
     }
 
-    setYear.addEventListener('change', function () {
+    setYear.addEventListener('blur', function () {
         year = Number(setYear.value);
 
         checkUp();
