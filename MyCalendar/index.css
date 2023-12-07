@@ -168,3 +168,12 @@ body {
     font-weight: normal;
     color: white;
 }
+@media screen and (max-width: 920px) {
+    body{
+        align-items:baseline;
+        padding-top: 40%;
+    }
+    .container{
+        transform: scale(3);
+    }
+}

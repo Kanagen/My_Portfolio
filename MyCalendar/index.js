@@ -193,7 +193,13 @@ function checkUp() {
 }
 
 // навигация по календарю с помощью прямого ввода месяца и года
-currYear.addEventListener('dblclick', function func() {
+currYear.addEventListener('click', function func(e) {
+    e.preventDefault();
+
+    if(e.target.tagName = 'P'){
+
+        
+    
 
     //присвоение классов
 
@@ -223,11 +229,11 @@ currYear.addEventListener('dblclick', function func() {
         checkUp();
         CalendarMain();
 
-
     })
     
     // this.classList.add('noVisible');
-    this.removeEventListener('click', func);
+    // this.removeEventListener('click', func);
+}
     
 })
 
