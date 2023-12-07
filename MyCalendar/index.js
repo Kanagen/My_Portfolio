@@ -193,6 +193,7 @@ function checkUp() {
 }
 
 // навигация по календарю с помощью прямого ввода месяца и года
+<<<<<<< HEAD
 currYear.addEventListener('click', function func(e) {
     e.preventDefault();
 
@@ -200,6 +201,9 @@ currYear.addEventListener('click', function func(e) {
 
         
     
+=======
+currYear.addEventListener('click', function func() {
+>>>>>>> 318ba800060b0412960dc62f68feceb86589adbc
 
     //присвоение классов
 
@@ -233,7 +237,10 @@ currYear.addEventListener('click', function func(e) {
     
     // this.classList.add('noVisible');
     // this.removeEventListener('click', func);
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 318ba800060b0412960dc62f68feceb86589adbc
     
 })
 
