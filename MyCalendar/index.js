@@ -1,9 +1,10 @@
-// Текущая дата
+    // Текущая дата
 let date = new Date();
 //Текущий год
 let year = date.getFullYear();
 //Текущий месяц
 let month = date.getMonth();
+
 
 //Объявление массива месяцев
 const months = [
@@ -20,6 +21,7 @@ const months = [
     "November",
     "December"
 ];
+
 
 //Доступ к элементам страницы
 
@@ -44,6 +46,8 @@ const arrows = document.querySelectorAll(".dataSet span");
 const ready = document.querySelector(".ready");
 
 btn.classList.add('noVisible');
+
+
 
 //заполнение календаря числами
 
@@ -198,61 +202,38 @@ function checkUp() {
 
 currYear.addEventListener('click', function func() {
 
+    setYear.value = '';
+    let option = monthList[0];
+    option.selected = true;
+    
     //присвоение классов
 
     controls.classList.add('noVisible');
     inputData.classList.remove('noVisible');
-
     btn.classList.remove('noVisible');
 
-    setYear.value = '';
-
-
-    //заполнение выпадающего списка
-    for (let i = 0; i < months.length; i++) {
-        let item = document.createElement('option');
-        item.value = i;
-        item.innerHTML = months[i];
-        monthList.appendChild(item);
-    }
-
-    // setYear.addEventListener('blur', function () {
-    //     year = Number(setYear.value);
-
-    //     checkUp();
-    //     CalendarMain();
-    // })
-
-    // monthList.addEventListener('click', function () {
-
-    //     month = monthList.options.selectedIndex;
-    //     checkUp();
-    //     CalendarMain();
-
-    // })
-    
-    // this.classList.add('noVisible');
-    // this.removeEventListener('click', func);
+        // Resulting with button ready
 
     ready.addEventListener('click', ()=>{
-        month = monthList.options.selectedIndex;
+
         year = Number(setYear.value);
+        month = monthList.selectedIndex;
 
         checkUp();
         CalendarMain();
 
     })
-    
 })
 
 btn.addEventListener('click', function(){
+
 
     controls.classList.remove('noVisible');
     inputData.classList.add('noVisible');
     btn.classList.add('noVisible')
     
     clickCounter = 0;
-    
+        
     date = new Date();
 //Текущий год
     year = date.getFullYear();
@@ -262,3 +243,4 @@ btn.addEventListener('click', function(){
     CalendarMain();
 
 })
+
