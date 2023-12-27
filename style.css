@@ -6,8 +6,9 @@
 }
 body{
     width: 100%;
-    height: max-content;
-    background-image: url(./img/Pattern1.png);
+    min-height: 100vh;
+    background-image: url(./img/ostrov-merdo-i-magazin-mayakov-torungen-arendal-norvegiya-zakat-jonz.jpg);
+    background-attachment: fixed;
     background-size: cover;
     /* border: 1px solid black;*/
 } 
@@ -32,9 +33,10 @@ body{
     /* border: 1px solid blue; */
 }
 .header h1{
-    text-shadow: -0.5vw 0.5vw 0.5vw rgb(43, 41, 41) ;width: fit-content;
+    text-shadow: -0.5vw 0.5vw 0.5vw rgb(43, 41, 41);
+    width: fit-content;
     padding: 1vw;
-    color: rgb(68, 73, 66);
+    color: rgb(84, 202, 38);
     align-self: flex-start;
     margin-left: 5vw;
     font-size: 3vw;
@@ -65,7 +67,7 @@ body{
 .list-link{
     width: 100%;
     height: 100%;
-    color: blueviolet;
+    color: rgb(128, 226, 43);
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -116,20 +118,20 @@ body{
     /* border-radius: 50%; */
     /* border: 2px solid blue; */
     /* margin-bottom: 2vw; */
-    background-color: #CAC6C6;
+    /* background-color: #CAC6C6; */
 }
 .photo-frame{
     width: 100%;
-    height: 100%;
-    border: 1px solid rgb(85, 84, 84);
+    height: 110%;
+    /* border: 1px solid rgb(85, 84, 84); */
     /* border-radius: 50%; */
-    border-style: groove;
-    background-image: url(./img/Portret.png);
+    /* border-style: groove; */
+    background-image: url(./img/Portret-2.png);
     background-size: cover;
     /* background-size: contain;
     background-repeat: no-repeat;
     background-position: center; */
-    box-shadow: -0.5vw 0.5vw 0.3vw rgb(101, 95, 95) ;
+    /* box-shadow: -0.5vw 0.5vw 0.3vw rgb(101, 95, 95) ; */
 }
 .article-work-samples{
     width: 100%;
@@ -142,15 +144,16 @@ body{
     /* border: 1px solid red; */
 }
 .sample-list{
-    width: 100%;
+    width: 95%;
     height: max-content;
     display: flex; 
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
     list-style: none;
 }
 .sample-list-item{
-    width: 45vw;
+    width: 100%;
     height: 50vw;
     background-color: beige;
     border: 1px solid rgb(216, 183, 143);
@@ -173,6 +176,9 @@ body{
     /* margin-bottom: 1vw; */
     /* border: 1px solid red; */
 }
+.small {
+    width: 50%;
+}
 .item-pict-frame a{
     width: 100%;
     height: 100%;
@@ -182,10 +188,13 @@ body{
     
     /* border: 1px solid blue; */
 }
+.tnail{
+    width: 100%;
+    height: 100%;
+}
 .item-txt p:first-of-type{
     margin-top: 0.5vw;
     text-align: center;
-    margin-top: 0.5vw;
 }
 .item-txt-desc{
     width: 90%;
@@ -244,30 +253,34 @@ body{
     text-align: center;
     margin-bottom: 2vw;
 } */
-.tnail{
-    width: 100%;
-    height: 100%;
-}
+
 .footer{
     width: 100%;
-    height: 9.5vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid rgb(2, 85, 2);
+    
 }
 .footer-info{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    color: azure;
+    /* border-top: 2px solid rgb(2, 85, 2); */
 }
 .footer-info ul{
     list-style: none;
-
+}
+.contacts a{
+    text-decoration: none;
+    color: azure;
 }
 
 @media screen and (max-width: 750px) {

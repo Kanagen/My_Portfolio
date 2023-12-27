@@ -1,10 +1,9 @@
-    // Текущая дата
+// Текущая дата
 let date = new Date();
 //Текущий год
 let year = date.getFullYear();
 //Текущий месяц
 let month = date.getMonth();
-
 
 //Объявление массива месяцев
 const months = [
@@ -21,7 +20,6 @@ const months = [
     "November",
     "December"
 ];
-
 
 //Доступ к элементам страницы
 
@@ -42,12 +40,9 @@ const navEditor = document.querySelector(".navEditor");
 const calendarDays = document.querySelector(".dayMeans");
 
 const arrows = document.querySelectorAll(".dataSet span");
-
 const ready = document.querySelector(".ready");
 
 btn.classList.add('noVisible');
-
-
 
 //заполнение календаря числами
 
@@ -199,22 +194,19 @@ function checkUp() {
 }
 
 // навигация по календарю с помощью прямого ввода месяца и года
-
 currYear.addEventListener('click', function func() {
 
-    setYear.value = '';
-    let option = monthList[0];
-    option.selected = true;
-    
     //присвоение классов
 
     controls.classList.add('noVisible');
     inputData.classList.remove('noVisible');
+
     btn.classList.remove('noVisible');
 
         // Resulting with button ready
 
     ready.addEventListener('click', ()=>{
+
 
         year = Number(setYear.value);
         month = monthList.selectedIndex;
@@ -223,17 +215,17 @@ currYear.addEventListener('click', function func() {
         CalendarMain();
 
     })
+    
 })
 
 btn.addEventListener('click', function(){
-
 
     controls.classList.remove('noVisible');
     inputData.classList.add('noVisible');
     btn.classList.add('noVisible')
     
     clickCounter = 0;
-        
+    
     date = new Date();
 //Текущий год
     year = date.getFullYear();
@@ -243,4 +235,5 @@ btn.addEventListener('click', function(){
     CalendarMain();
 
 })
+
 

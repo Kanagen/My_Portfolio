@@ -82,11 +82,11 @@ body {
     width: 40%;
 }
 .dataYear,.setYear {
-    width: 25%;
+    width: 20%;
 }
 .monthList, .setYear{
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-weight: bold;
     border-radius: 0.5vw;
     background-color: blanchedalmond;
@@ -171,7 +171,6 @@ body {
 @media screen and (max-width: 920px) {
     body{
         align-items: flex-start;
-        align-items:baseline;
         padding-top: 40%;
     }
     .container{

@@ -57,6 +57,16 @@
     /* background-color: white;
     border: 2px solid #d7d7d7; */
 }
+/* .img_frame_socials{
+    
+} */
+.img_social-item{
+    border-radius: 50%;
+}
+.img_social-link.fTwitter, .img_social-link.fFacebook{
+    border-radius: 50%;
+    background-color: #f26c4f;
+}
 
 .picture{
     width: 98%;
@@ -165,12 +175,12 @@
 }
 .img_frame_socials{
     width: 3.5vw;
-    height: 7vw;
+    height: 7.5vw;
     position: relative;
-    top: 14vw;
+    bottom: -13vw;
     left: 5vw;
     z-index: 2;
-    /* background-color: wheat; */
+    /* border: 1px solid red; */
 }
 .img_frame_social_list{
     width: 100%;
@@ -179,8 +189,12 @@
 }
 .img_social-item{
     width: 100%;
-    height: calc(100%/2);
+    height: 3.5vw;
+    
     /* border: 1px solid red; */
+}
+.img_social-item:nth-child(1){
+    margin-bottom: 0.5vw;
 }
 .img_social-item a{
     border: none;
