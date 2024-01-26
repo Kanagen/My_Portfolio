@@ -80,13 +80,17 @@ body {
 }
 .dataMonth,.monthList {
     width: 40%;
+    height: 2vw;
+    
 }
 .dataYear,.setYear {
-    width: 20%;
+    width: 25%;
+    height: 2vw;
+    
 }
 .monthList, .setYear{
     text-align: center;
-    font-size: 2vw;
+    font-size:1.5vw;
     font-weight: bold;
     border-radius: 0.5vw;
     background-color: blanchedalmond;
@@ -175,5 +179,25 @@ body {
     }
     .container{
         transform: scale(3);
+    }
+    .dataMonth, .dataYear{
+        /* width: max-content; */
+        height: 3vw;
+        font-size: 2vw;
+        padding: 0.5vw;
+    }
+    .dataMonth{
+        width: 13Vw;
+    }
+    .monthList, .setYear{
+        height: 3.5vw;
+        font-size: 2vw;
+        padding: 0;
+    }
+    .monthList{
+        width: max-content;
+    }
+    .setYear{
+        width: 7vw;
     }
 }

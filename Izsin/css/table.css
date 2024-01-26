@@ -6,8 +6,8 @@
 }
 body.table{
     width: 100vw;
-    height: 100vh;
-     overflow: hidden; 
+    min-height: 100vh;
+    overflow:scroll; 
 }
 #table_board{
     width: 40vw;
@@ -89,6 +89,10 @@ a.cell {
     text-decoration: none;
     color: inherit;
     
+}
+#hexNumber p{
+    text-align: center;
+    margin-top: 2vw;
 }
 /* 
 .sprite.ch1 {
@@ -184,5 +188,9 @@ a.cell {
         width: 6vw;
         height: 6vw;
         font-size: 3vw;
+    }
+    #hexNumber p{
+        text-align: center;
+        margin-top: 2vw;
     }
 }

@@ -14,7 +14,7 @@
 } */
 .main{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     /*border: 2px solid red;*/
     background-image: url(../img/1625721264_20-kartinkin-com-p-oboi-v-kitaiskom-stile-krasivie-20.jpg);
     background-repeat: no-repeat;
@@ -237,6 +237,9 @@
     .asck-menu-btn_item{
         width: 50%;
         height: 20%;
+    }
+    .asck-menu-btn_item{
+        margin-bottom: 2vw;
     }
 }
 @media screen and (max-width:330px) {
