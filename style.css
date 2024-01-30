@@ -26,8 +26,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-image: linear-gradient(135deg, rgb(90, 88, 88), rgb(208, 204, 204));
-    background-size: cover; */
+    
 }
 .header{
     width: 100%;
@@ -46,14 +45,14 @@ body{
     color: orange;
     align-self: flex-start;
     margin-left: 5vw;
-    font-size: 5vw;
+    font-size: 4rem;
     /* border: 1px solid red; */
 }
 .header-menu{
     width: 50%;
     height: 5vw;
     /* border: 1px solid greenyellow; */
-    font-size: 3vw;
+    font-size: 2rem;
 }
 .header-menu ul{
     width: 100%;
@@ -93,7 +92,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     padding: 2vw 0;
-    font-size: 2.1vw;
+    font-size: 2rem;
 }
 .atricle-main-info{
     width: 100%;
@@ -198,7 +197,6 @@ body{
     height: 100%;
 }
 .item-txt p:first-of-type{
-    margin-top: 0.5vw;
     text-align: center;
 }
 .item-txt-desc{
@@ -218,7 +216,7 @@ body{
     bottom: 0;
     left: 0;
     overflow: hidden;
-    font-size: 1.3vw;
+    font-size: 1.8rem;
     padding: 1vw 2vw;
     text-align: justify;
     margin-top: 1vw;
@@ -250,7 +248,7 @@ body{
     align-items: center;
     /* background-color: rgb(185, 134, 59); */
     color: white;
-    font-size: 1.2vw;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 .footer{
@@ -269,7 +267,7 @@ body{
     align-items: center;
     padding-top: 3vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 5vw;
+    font-size: 2rem;
     color: azure;
     /* border-top: 2px solid rgb(2, 85, 2); */
 }
@@ -295,6 +293,7 @@ body{
 @media screen and (max-width: 850px) {
     .header h1{
         align-self: center;
+        font-size: 2rem;
     }
     .sample-list{
     width: 100%;
@@ -314,6 +313,7 @@ body{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        font-size: 1rem;
     }
     
     .photo{
@@ -327,8 +327,13 @@ body{
         font-size: 2vw;
     }
     .btn{
-        height: 15%;
+        width: 50%;
+        height: 20%;
     }
+    .btn-link, .item-txt p:first-of-type{
+        font-size: 0.6rem;
+    }
+    
     .footer{
         font-size: 1vw;
     }
@@ -349,8 +354,11 @@ body{
         background-color: rgb(0, 0, 0, 0.3);
     }
     .sideBar--opened{
-        width: 25vw;
+        width: 20vw;
         background-color: rgb(0, 0, 0, 0.3);
+    }
+    .sideBar_close{
+        margin-left: 1rem;
     }
     .sideBar_hamburger{
         display: block;
